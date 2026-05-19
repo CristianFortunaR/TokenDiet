@@ -1,6 +1,8 @@
 # Token Diet
 
-Token Diet is a premium, local-first React application designed for prompt engineering and LLM token optimization. It helps developers strip out conversational filler, preserve technical constraints, and compress prompts before sending them to large language models—saving you API tokens, latency, and money.
+Token Diet is a high-performance, local-first React application engineered to explore the intersection of prompt efficiency and LLM cost management. Built as a proof-of-concept for production-grade prompt engineering tools, it demonstrates full-stack expertise in API orchestration, client-side state management, and real-time data visualization.
+
+This project was developed to address the "tokenmaxxing" phenomenon, providing a transparent, privacy-first alternative to bloated autonomous agent workflows. It serves as a technical showcase for handling complex LLM interactions with minimal infrastructure overhead.
 
 <img width="1514" height="801" alt="Captura de Tela 2026-05-18 às 22 17 16" src="https://github.com/user-attachments/assets/ddf2805e-e28e-4e68-abba-2171528bc48a" />
 
@@ -11,6 +13,17 @@ Token Diet is a premium, local-first React application designed for prompt engin
 - **Technical Mode:** A toggle that ensures JSON structures, Markdown tables, and complex formatting are preserved exactly as-is during AI optimization.
 - **Diff View:** Visually compare your original prompt with the optimized prompt to see exactly what was removed (red highlights) and added (green highlights).
 - **Benchmark Suite:** Run your prompt (or a standardized prompt) across all your configured LLM providers simultaneously to compare latency, token usage, and net savings.
+
+## Technical Journey & Learnings
+This project was built to test several advanced development concepts in a real-world scenario:
+
+Privacy-First Architecture: Implemented a "Bring Your Own Key" (BYOK) pattern to handle sensitive credentials entirely on the client side, ensuring zero-knowledge privacy.
+
+API Abstraction: Designed a modular wrapper for OpenAI, Anthropic, and local Ollama providers, allowing for extensible multi-LLM support.
+
+Latency & Token Profiling: Integrated tiktoken for real-time token counting and performance benchmarking to help users quantify the ROI of their prompt optimizations.
+
+Complex State Visualization: Engineered custom components (like the DiffView) to provide immediate feedback on LLM-driven text transformation.
 
 ## Running Locally
 
