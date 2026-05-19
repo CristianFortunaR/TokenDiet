@@ -2,7 +2,7 @@
 
 Token Diet is a premium, local-first React application designed for prompt engineering and LLM token optimization. It helps developers strip out conversational filler, preserve technical constraints, and compress prompts before sending them to large language models—saving you API tokens, latency, and money.
 
-![Token Diet Interface](./screenshot.png) <!-- Update with an actual screenshot if needed -->
+<img width="1514" height="801" alt="Captura de Tela 2026-05-18 às 22 17 16" src="https://github.com/user-attachments/assets/ddf2805e-e28e-4e68-abba-2171528bc48a" />
 
 ## Key Features
 
