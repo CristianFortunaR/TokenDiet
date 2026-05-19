@@ -25,6 +25,18 @@ Latency & Token Profiling: Integrated tiktoken for real-time token counting and 
 
 Complex State Visualization: Engineered custom components (like the DiffView) to provide immediate feedback on LLM-driven text transformation.
 
+## 🛠 Tech Stack & Architecture Decisions
+
+Token Diet was deliberately built with a lightweight, local-first stack that prioritizes speed, security, and a premium developer experience.
+
+- **React 18 & Vite**: Chosen for a highly reactive, component-based UI paired with lightning-fast Hot Module Replacement (HMR). Vite's optimized build pipeline keeps the app's footprint small and loading times minimal.
+- **TypeScript**: Enforces strict typing (like `OptimizerSettings` and `OptimizerError`), drastically reducing runtime errors across multiple third-party API interactions and configuration states.
+- **Vanilla CSS (Glassmorphism)**: We avoided heavy utility frameworks (like Tailwind) or component libraries (like Material UI). Instead, we wrote custom CSS utilizing modern CSS variables and glassmorphic techniques (backdrop filters, subtle borders) to achieve a uniquely high-end, futuristic "diet" interface.
+- **`gpt-tokenizer` (tiktoken)**: Embedded directly into the client. By performing BPE (Byte-Pair Encoding) token estimation directly in the browser, users get instantaneous token counts as they type, eliminating the need for constant, laggy server round-trips.
+- **`diff` library**: Essential for the DiffView. It provides exact character/word-level textual comparisons. This turns a "black box" AI transformation into a highly transparent process, highlighting exactly what conversational filler was removed.
+- **Lucide React**: Integrated for crisp, scalable, modern SVG icons that match the premium aesthetic without the bloat of traditional icon fonts.
+- **Zero-Backend / BYOK Model**: The entire application runs statically. By using a "Bring Your Own Key" (BYOK) model, your API keys (OpenAI, Anthropic) are saved exclusively to your browser's `localStorage`. This guarantees 100% privacy and zero server costs.
+
 ## Running Locally
 
 Token Diet is built with Vite, React, and TypeScript. 
